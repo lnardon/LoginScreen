@@ -14,14 +14,25 @@
 .contentContainer {
   position: absolute;
   width: 50%;
-  height: 100vh;
-  background-color: #fafafa;
+  height: 0vh;
+  background-color: #f8f8f8;
   left: 50%;
-  box-shadow: -11px 0px 13px rgba(0, 0, 0, 0.35);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: bgUp 0.9s 0.7s ease-out forwards;
+  overflow: hidden;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  width: 250px;
 }
 
 .formTitle {
@@ -29,4 +40,28 @@
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.signinBtn {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin: 2rem 0rem;
+}
+/* ANIMATIONS */
+@keyframes bgUp {
+  from {
+    height: 0vh;
+  }
+  to {
+    height: 100vh;
+  }
 }
