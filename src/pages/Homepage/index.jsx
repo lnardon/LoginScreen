@@ -17,7 +17,12 @@ function Homepage() {
             <label htmlFor="password">Password:</label>
             <input type="password" name="password" />
           </div>
-          <button className={styles.signinBtn}>SIGN IN</button>
+          <button
+            onClick={() => alert("Signed In")}
+            className={styles.signinBtn}
+          >
+            SIGN IN
+          </button>
         </div>
       </div>
     </div>

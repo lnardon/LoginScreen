@@ -15,7 +15,7 @@
   position: absolute;
   width: 50%;
   height: 0vh;
-  background-color: #f8f8f8;
+  background-color: #111111;
   left: 50%;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,7 @@
   justify-content: center;
   animation: bgUp 0.9s 0.7s ease-out forwards;
   overflow: hidden;
+  color: #fafafa;
 }
 
 .form {
@@ -33,6 +34,8 @@
   justify-content: center;
   padding: 2rem;
   width: 250px;
+  border: 4px solid green;
+  border-radius: 1rem;
 }
 
 .formTitle {
@@ -49,13 +52,30 @@
   width: 100%;
 }
 
+.inputDiv > input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 2px solid green;
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+
 .signinBtn {
   border: none;
   outline: none;
   padding: 0.5rem 1rem;
   width: 100%;
   margin: 2rem 0rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: green;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  color: #fafafa;
 }
+
 /* ANIMATIONS */
 @keyframes bgUp {
   from {
